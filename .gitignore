@@ -1,0 +1,15 @@
+deps/
+htmlcov
+.tox
+.eggs/
+coverage.svg
+venv
+.idea
+.pytest_cache
+*.db
+*.pid
+.coverage
+junit.xml
+coverage.xml
+__pycache__*
+*.sqlite3

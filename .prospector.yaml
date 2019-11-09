@@ -1,0 +1,32 @@
+strictness: veryhigh
+test-warnings: true
+doc-warnings: false
+
+ignore-paths:
+  - .git
+  - .tox
+  - venv
+uses:
+  - django
+pep8:
+  run: false
+
+pylint:
+  disable:
+    - too-many-ancestors
+    - arguments-differ
+    - too-few-public-methods
+    - global-statement
+    - wrong-import-position
+    - too-many-instance-attributes
+    - too-many-arguments
+    - too-many-branches
+    - too-many-locals
+    - too-many-public-methods
+    - too-many-statements
+    - abstract-method
+    - wrong-import-order
+  options:
+    max-line-length: 120
+    good-names: pk, e, T, by, urlpatterns, do
+    generated-members: query,delete,commit,add,File,is_active,rollback,expire_all

@@ -1,0 +1,13 @@
+coreapi
+django
+django-annoying
+django-cors-headers
+django-filter
+djangorestframework
+drf-yasg
+gunicorn
+mozilla-django-oidc
+mozilla-django-oidc
+packaging
+psycopg2-binary
+whitenoise

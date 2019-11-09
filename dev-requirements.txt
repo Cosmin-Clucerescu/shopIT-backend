@@ -1,0 +1,10 @@
+black
+django-stubs
+djangorestframework-stubs
+mock
+pre-commit
+pytest
+pytest-django
+pytest-parametrized
+toml
+tox

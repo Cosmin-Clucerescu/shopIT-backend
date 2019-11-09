@@ -1,0 +1,7 @@
+{
+  "SECRET_KEY": "test",
+  "IS_PROD": false,
+  "FRONTEND_URL": "http://localhost:80",
+  "DATABASE_PASSWORD": "",
+  "DATABASE_HOST": ""
+}
