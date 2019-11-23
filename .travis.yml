@@ -1,0 +1,26 @@
+language: python
+cache: pip
+before_script:
+- pip install tox
+
+# test script
+script:  tox
+notifications:
+  on_success: change
+  on_failure: always
+
+matrix:
+  include:
+    - python: 3.8
+      env: TOXENV=pytest
+    - python: 3.8
+      env: TOXENV=flake8
+    - python: 3.8
+      env: TOXENV=pylint
+    - python: 3.8
+      env: TOXENV=black
+
+before_install:
+  - pip install -U coveralls
+after_success:
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.8 ]]; then coveralls; fi
