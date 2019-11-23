@@ -13,12 +13,12 @@ matrix:
   include:
     - python: 3.8
       env: TOXENV=pytest
-    - python: 3.8
-      env: TOXENV=flake8
-    - python: 3.8
-      env: TOXENV=prospector
-    - python: 3.8
-      env: TOXENV=black
+#    - python: 3.8
+#      env: TOXENV=flake8
+#    - python: 3.8
+#      env: TOXENV=prospector
+#    - python: 3.8
+#      env: TOXENV=black
 
 before_install:
   - pip install -U coveralls
