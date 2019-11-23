@@ -4,7 +4,7 @@ from rest_framework import generics, serializers, permissions, response, excepti
 
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField(required=True)
-    password = serializers.CharField(required=True, min_length=8)
+    password = serializers.CharField(required=True, min_length=1, write_only=True)
 
 
 class Login(generics.CreateAPIView):
